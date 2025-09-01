@@ -8,7 +8,7 @@
   <a href="https://jitpack.io/#YourGitHubUser/FontResizify"><img src="https://jitpack.io/v/YourGitHubUser/FontResizify.svg" alt="JitPack"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT"></a>
   <img src="https://img.shields.io/badge/Jetpack%20Compose-✓-blue" alt="Jetpack Compose">
-  <img src="https://img.shields.io/badge/Android-21+-brightgreen" alt="Android">
+  <img src="https://img.shields.io/badge/Android-27+-brightgreen" alt="Android">
 </p>
 
 ---
