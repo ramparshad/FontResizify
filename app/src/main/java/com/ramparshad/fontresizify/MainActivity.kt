@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Text
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -26,7 +27,7 @@ import com.ramparshad.font_resizify.FontSliderControlColors
 import com.ramparshad.font_resizify.FontSliderControlSizes
 import com.ramparshad.font_resizify.FontSliderProvider
 import com.ramparshad.font_resizify.Orientation
-import com.ramparshad.font_resizify.Text
+import com.ramparshad.font_resizify.ResizableText
 import com.ramparshad.fontresizify.ui.theme.FontResizifyTheme
 
 class MainActivity : ComponentActivity() {
@@ -59,7 +60,7 @@ fun FontResizifyDemo() {
                 .padding(16.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            Text(
+            ResizableText(
                 text = "FontResizify Demo",
                 style = MaterialTheme.typography.headlineLarge,
                 fontWeight = FontWeight.Bold,
@@ -105,30 +106,30 @@ fun FontResizifyDemo() {
                 text = "This is a heading that scales",
                 style = MaterialTheme.typography.headlineMedium,
                 modifier = Modifier.padding(vertical = 8.dp),
-                fontSlider = true
+
             )
 
 
-            Text(
+            ResizableText(
                 text = "This is body text that also scales with the slider. Notice how all text with fontSlider=true responds to the font size adjustment.",
                 style = MaterialTheme.typography.bodyLarge,
                 modifier = Modifier.padding(vertical = 8.dp),
                 fontSlider = true
             )
 
-            Text(
+            ResizableText(
                 text = "This text doesn't scale (fontSlider=false)",
                 style = MaterialTheme.typography.bodyMedium,
                 modifier = Modifier.padding(vertical = 8.dp),
                 fontSlider = true
             )
 
-            Text(
+            ResizableText(
                 text = "Another scaling text with different style",
                 color = MaterialTheme.colorScheme.primary,
                 fontWeight = FontWeight.Bold,
                 modifier = Modifier.padding(vertical = 8.dp),
-                fontSlider = true
+                fontSlider = false
             )
         }
     }

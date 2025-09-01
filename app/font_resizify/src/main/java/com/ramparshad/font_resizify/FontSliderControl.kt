@@ -128,7 +128,7 @@ private fun VerticalSliderControl(
             modifier = Modifier.padding(sizes.cardPadding)
         ) {
             if (showPercentage) {
-                Text(
+                ResizableText(
                     text = "Font Size: ${(fontScaleState.scale * 100).toInt()}%",
                     fontWeight = FontWeight.Bold,
                     color = colors.textColor
@@ -153,8 +153,8 @@ private fun VerticalSliderControl(
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceBetween
                 ) {
-                    Text(text = "${(minScale * 100).toInt()}%", color = colors.textColor)
-                    Text(text = "${(maxScale * 100).toInt()}%", color = colors.textColor)
+                    ResizableText(text = "${(minScale * 100).toInt()}%", color = colors.textColor)
+                    ResizableText(text = "${(maxScale * 100).toInt()}%", color = colors.textColor)
                 }
             }
 
@@ -170,7 +170,7 @@ private fun VerticalSliderControl(
                         contentColor = colors.buttonTextColor
                     )
                 ) {
-                    Text(text = resetButtonText, color = colors.buttonTextColor)
+                    ResizableText(text = resetButtonText, color = colors.buttonTextColor)
                 }
             }
         }
@@ -204,7 +204,7 @@ private fun HorizontalSliderControl(
         ) {
             Column(modifier = Modifier.weight(1f)) {
                 if (showPercentage) {
-                    Text(
+                    ResizableText(
                         text = "Font Size: ${(fontScaleState.scale * 100).toInt()}%",
                         fontWeight = FontWeight.Bold,
                         color = colors.textColor
@@ -229,8 +229,8 @@ private fun HorizontalSliderControl(
                         modifier = Modifier.fillMaxWidth(),
                         horizontalArrangement = Arrangement.SpaceBetween
                     ) {
-                        Text(text = "${(minScale * 100).toInt()}%", color = colors.textColor)
-                        Text(text = "${(maxScale * 100).toInt()}%", color = colors.textColor)
+                        ResizableText(text = "${(minScale * 100).toInt()}%", color = colors.textColor)
+                        ResizableText(text = "${(maxScale * 100).toInt()}%", color = colors.textColor)
                     }
                 }
             }
@@ -245,7 +245,7 @@ private fun HorizontalSliderControl(
                         contentColor = colors.buttonTextColor
                     )
                 ) {
-                    Text(text = resetButtonText, color = colors.buttonTextColor)
+                    ResizableText(text = resetButtonText, color = colors.buttonTextColor)
                 }
             }
         }
