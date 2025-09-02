@@ -98,7 +98,7 @@ fun MyScreen() {
 }
 ```
 
-### Add Slider Control 
+### 3. Add Slider Control 
 
 ```
 @Composable
