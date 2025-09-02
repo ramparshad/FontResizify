@@ -98,6 +98,19 @@ fun MyScreen() {
 }
 ```
 
+### Add Slider Control 
+
+```
+@Composable
+fun MyScreen() {
+    Column {
+        // Other content here
+        
+        // Add slider control
+        FontSliderControl()
+    }
+}
+```
 
 
 
