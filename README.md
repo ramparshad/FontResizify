@@ -193,6 +193,11 @@ ResizableText(
 ###  🤝 Contributing
 We welcome contributions! Please feel free to submit pull requests or open issues for bugs and feature requests.
 
+## 📜 License
+
+This library is licensed under the MIT License.  
+See the [LICENSE](./LICENSE) file for details.
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 
 
 
