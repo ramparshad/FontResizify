@@ -54,3 +54,65 @@ dependencies {
 	        implementation ("com.github.ramparshad:FontResizify:1.0.1")
 	}
 ```
+
+## 🚀 Quick Start
+
+### 1. Wrap Your App with Provider
+
+```
+@Composable
+fun MyApp() {
+    FontSliderProvider {
+        MyScreen()        // Your app content
+    }
+}
+```
+
+### 2. Use ResizableText for Scalable Content
+
+```
+import com.ramparshad.font_resizify.ResizableText
+
+@Composable
+fun MyScreen() {
+    Column {
+        // This text will scale with the slider
+        ResizableText(
+            text = "Scalable Heading",
+            fontSlider = true,
+            style = MaterialTheme.typography.headlineMedium
+        )
+        
+        // This text won't scale
+        ResizableText(
+            text = "Static text",
+            fontSlider = false
+        )
+        
+        // You can still use default Text component
+        Text(
+            text = "Regular Compose Text",
+            style = MaterialTheme.typography.bodyLarge
+        )
+    }
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
