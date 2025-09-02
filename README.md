@@ -112,11 +112,83 @@ fun MyScreen() {
 }
 ```
 
+## 🎨 Customization Examples
 
+### 📖 Custom Colors and Layout
 
+```
+FontSliderControl(
+    colors = FontSliderControlColors(
+        cardColor = Color(0xFFE3F2FD),
+        cardBorderColor = Color(0xFF2196F3),
+        textColor = Color(0xFF1565C0),
+        buttonColor = Color(0xFF2196F3),
+        buttonTextColor = Color.White,
+        sliderColor = Color(0xFF2196F3),
+        sliderTrackColor = Color(0xFFBBDEFB)
+    ),
+    orientation = Orientation.Horizontal,
+    resetButtonText = "Reset"
+)
+```
 
+### 📖 Minimalist Slider
 
+```
+FontSliderControl(
+    showPercentage = false,
+    showMinMaxLabels = false,
+    showResetButton = false
+)
+```
 
+### 📖 Compact Design
+
+```
+FontSliderControl(
+    sizes = FontSliderControlSizes(
+        cardElevation = 4.dp,
+        cardPadding = 12.dp,
+        spacing = 6.dp,
+        buttonHeight = 36.dp
+    )
+)
+```
+
+### 📖 Custom Scale Range
+
+```
+FontSliderProvider(
+    minScale = 0.8f,   // 80% minimum
+    maxScale = 1.8f    // 180% maximum
+) {
+    // other content here
+}
+```
+
+###  📖 ResizableText Parameters
+
+```
+ResizableText(
+    text: String,                    // Text to display
+    modifier: Modifier = Modifier,   // Layout modifier
+    color: Color = Color.Unspecified,// Text color
+    fontSize: TextUnit = TextUnit.Unspecified, // Font size
+    fontStyle: FontStyle? = null,    // Font style (normal, italic)
+    fontWeight: FontWeight? = null,  // Font weight
+    fontFamily: FontFamily? = null,  // Font family
+    letterSpacing: TextUnit = TextUnit.Unspecified, // Letter spacing
+    textDecoration: TextDecoration? = null, // Text decoration
+    textAlign: TextAlign? = null,    // Text alignment
+    lineHeight: TextUnit = TextUnit.Unspecified, // Line height
+    overflow: TextOverflow = TextOverflow.Clip, // Overflow handling
+    softWrap: Boolean = true,        // Soft wrap
+    maxLines: Int = Int.MAX_VALUE,   // Maximum lines
+    onTextLayout: (TextLayoutResult) -> Unit = {}, // Layout callback
+    style: TextStyle = LocalTextStyle.current, // Text style
+    fontSlider: Boolean = false      // Enable scaling (REQUIRED)
+)
+```
 
 
 
