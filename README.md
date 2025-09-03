@@ -22,6 +22,8 @@ Perfect for accessibility, user personalization, or simply giving more control t
 
 ---
 
+https://github.com/user-attachments/assets/1099d53e-e92c-4a5e-8b02-5a9ccc289e7d
+
 ## ✨ Features
 
 - 🎚️ **Dynamic font scaling** with a global slider  
