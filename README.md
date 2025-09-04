@@ -35,7 +35,7 @@ https://github.com/user-attachments/assets/1099d53e-e92c-4a5e-8b02-5a9ccc289e7d
 
 ---
 
-## 📦 Installa
+## 📦 Installation
 
 Add **JitPack** to your `settings.gradle`:
 
