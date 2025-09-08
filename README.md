@@ -1,7 +1,7 @@
 <h1 align="center">✨ FontResizify ✨</h1>
 <p align="center">
   <b>A Jetpack Compose library for dynamic font scaling with DataStore persistence.</b><br/>
-  Drop-in replacement for Compose's <code>Text</code> with slider-based scal.  
+  Drop-in replacement for Compose's <code>Text</code> with slider-based scali.  
 </p>
 
 <p align="center">
