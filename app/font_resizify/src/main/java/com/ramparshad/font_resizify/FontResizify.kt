@@ -5,7 +5,7 @@ import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.compositionLocalOf
 
 
-val LocalFontScale = compositionLocalOf { 1 }
+val LocalFontScale = compositionLocalOf { 1f }
 
 @Composable
 fun FontSliderProvider(
